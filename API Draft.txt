@@ -1,0 +1,31 @@
+
+Title:
+pcproc — Simple Point Cloud Processing Tool
+
+Synopsis:
+pcproc [options] [file]
+
+Description:
+pcproc is  designed to process and visualize large point cloud data files. It provides options for generating heatmaps, calculating statistics, and focusing on specific regions of interest.
+
+Options:
+-h, --help
+    Display help information.
+-v, --version
+    Output version information.
+-i, --input FILE
+    Specify the input file containing the point cloud data.
+-o, --output FILE
+    Specify the output file path for saving the generated images.
+-r, --roi XMIN,XMAX,YMIN,YMAX
+    Define a rectangular region of interest (ROI) for processing.
+-m, --map TYPE
+    Generate a heatmap for the specified data type ('z' for elevation or 'intensity').
+-s, --stats
+    Calculate and display statistics for the specified dataset or ROI.
+-t, --transform TYPE
+    Normalize the variance across all rows ('rows'), all columns ('cols'), or both ('both').
+
+Author:
+Written by SKK.
+
